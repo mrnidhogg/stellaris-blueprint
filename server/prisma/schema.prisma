@@ -37,6 +37,8 @@ model Building {
   icon        String  // 图标URL或emoji
   width       Int     // 占格宽度
   height      Int     // 占格高度
-  连接点      Json?   // 连接点位置列表
+  canRotate   Boolean @default(false) // 是否可旋转
   description String?
+  entryPoints Json?   // 入口点位置
+  exitPoints  Json?   // 出口点位置
 }
